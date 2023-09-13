@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mephistiles</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        scroll-behavior: auto;
+      }
+      @keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInRight {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInUp {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideInDown {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .no-border {
+        border: 0 !important;
+      }
+
+      .no-bg {
+        background-color: transparent !important;
+      }
+
+      .bg-plusLight {
+        background-color: rgba(207, 238, 240, 0.37) !important;
+      }
+
+      .bg-plusLighter {
+        background-color: rgba(179, 196, 197, 0.39) !important;
+      }
+
+      .big-font {
+        font-size: 2.5cm !important;
+        font: bolder !important;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .big-font-2 {
+        font-size: 1.2cm !important;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .active {
+        font-style: oblique !important;
+      }
+      .ico-img {
+        transition: ease-in-out 0.21s;
+      }
+      .ico-img:hover {
+        transform: scale(1.4);
+      }
+      .nav-link {
+        transition: step-start(2);
+      }
+      .nav-link:hover {
+        transform: scaleX(1.1);
+      }
+
+      .slideIn {
+        animation: 1.6s ease-out 0s 1 slideInLeft;
+      }
+      .slideOut {
+        animation: 1.6s ease-out 0s 1 slideInRight;
+      }
+      .slideUp {
+        animation: 1.6s ease-out 0s 1 slideInUp;
+      }
+      .slideDown {
+        animation: 1.6s ease-out 0s 1 slideInDown;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-secondary"
+    style="
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      overflow-x: hidden;
+    "
+  >
+    <div class="container-fluid">
+      <nav
+        class="container-fluid navbar bg-light navbar-expand-lg fixed-top rounded-5"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link fs-5 p-1 mx-2" href="#me">Me</a>
+            <a class="nav-link fs-5 p-1 mx-2" href="#skills">Skills</a>
+            <a class="nav-link fs-5 p-1 mx-2" href="#projects">Projects</a>
+            <a class="nav-link fs-5 p-1 mx-2" href="#schooling">Schooling</a>
+            <a class="nav-link fs-5 p-1 mx-2" href="#certificate"
+              >Certificates</a
+            >
+            <a class="nav-link fs-5 p-1 mx-2" href="#other">Others</a>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="card rounded-4 border-0 my-5"
+        style="margin-top: 1.4cm !important"
+      >
+        <div class="row align-items-center bg-plusLighter mx-4 mt-4" id="me">
+          <div
+            class="col-8"
+            style="border-right: 2px solid rgba(126, 121, 121, 0.459)"
+          >
+            <div class="row text-center">
+              <div class="col align-items-center">
+                <p class="no-bg text-capitalize big-font slideIn">
+                  Prashant Singh
+                </p>
+                <p class="no-bg text-capitalize fs-3 text-danger slideIn">
+                  Software Developer | Fresher
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-1"></div>
+              <div class="col-10 align-self-center slideIn">
+                <img
+                  src="Pic.png"
+                  height="75%"
+                  width="75%"
+                  class="mx-auto d-block img-fluid rounded-3 slideIn"
+                  alt="..."
+                />
+              </div>
+              <div class="col-1"></div>
+            </div>
+            <div class="row align-self-center mt-4">
+              <div class="col-1"></div>
+              <div class="col-10 align-self-center">
+                <ul
+                  class="no-bg list-group no-border text-decoration-none justify-content-even"
+                >
+                  <li
+                    class="no-bg row fs-5 list-group-item no-border align-self-center justify-content-even slideIn"
+                  >
+                    <strong class="fs-4">Socials : </strong>
+                    <a
+                      class="no-bg text-decoration-none col"
+                      href="https://www.linkedin.com/in/prashant-singh-531b57198/"
+                      ><img
+                        alt="Linkedin"
+                        src="./Feather/linkedin.svg"
+                        height="30px"
+                        class="ico-img"
+                    /></a>
+                    <a
+                      class="no-bg text-decoration-none col"
+                      href="https://github.com/prashant-singh-2001"
+                      ><img
+                        height="30px"
+                        src="./Feather/github.svg"
+                        alt="Github"
+                        class="ico-img"
+                    /></a>
+                    <a
+                      class="no-bg text-decoration-none col"
+                      href="https://leetcode.com/PrashantSingh0110/"
+                      ><img
+                        height="30px"
+                        src="./Feather/leetcode.svg"
+                        alt="LeetCode"
+                        class="ico-img"
+                    /></a>
+                    <a
+                      class="no-bg text-decoration-none col"
+                      href="https://www.hackerrank.com/ps47600"
+                      ><img
+                        height="30px"
+                        src="./Feather/code.svg"
+                        alt="HackerRank"
+                        class="ico-img"
+                    /></a>
+                    <a
+                      class="no-bg text-decoration-none col"
+                      href="https://g.dev/PrashantSingh2001"
+                      ><img
+                        height="30px"
+                        src="./Feather/tool.svg"
+                        alt="Google Dev"
+                        class="ico-img"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-1"></div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card mx-2 no-bg slideOut border border-0">
+              <div class="card-header fs-3">Hey there!</div>
+              <div class="card-header">
+                <blockquote class="blockquote mb-0">
+                  <strong
+                    >I am an enthusiastic young man who is deeply passionate
+                    about the IT field.</strong
+                  >
+                  <br />I am driven by a strong desire to learn and am always
+                  seeking new opportunities to expand my knowledge and skills.
+                  Whether working on my own or as part of a team, I bring a
+                  positive and proactive approach to everything I do. I have
+                  worked on multiple projects from web-development to data
+                  analytics.
+                </blockquote>
+              </div>
+            </div>
+            <div
+              class="no-bg row align-items-end text-end slideOut"
+              style="margin-top: 1rem"
+            >
+              <ul
+                class="no-bg list-group no-border text-decoration-none justify-content-around"
+              >
+                <li class="no-bg fs-5 list-group-item no-border align-self-end">
+                  <img src="./Feather/mail.svg" /> Mail :
+                  <a
+                    class="no-bg text-decoration-none"
+                    href="mailto: ps47600@gmail.com"
+                  >
+                    Prashant Singh
+                  </a>
+                </li>
+                <li class="no-bg fs-5 list-group-item no-border align-self-end">
+                  <img src="./Feather/phone.svg" /> Contact number :
+                  +91-9131732003
+                </li>
+                <li class="no-bg fs-5 list-group-item no-border align-self-end">
+                  <img src="./Feather/map-pin.svg" /> Bhagat Singh Nagar, Bhind
+                  Road, Gwalior, <br />
+                  Madhya Pradesh- 474005
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="mx-2 border border-2 border-lg" />
+        <div class="row text-center mx-4" id="skills">
+          <h1 class="heading big-font-2 mb-5">Proefficiencies</h1>
+          <div
+            class="col-6"
+            style="border-right: 2px solid rgba(126, 121, 121, 0.459)"
+          >
+            <h2 class="fs-1">Techincal Skills</h2>
+            <div class="row">
+              <div
+                class="col-3"
+                style="border-right: 2px dashed rgba(126, 121, 121, 0.459)"
+              >
+                <div class="fs-3">Language</div>
+                <div class="row align-items-center alert p-0">
+                  <div class="col-5"><h6>Java:</h6></div>
+                  <div class="col-7">
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="78"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 78%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center alert p-0">
+                  <div class="col-5"><h6>C:</h6></div>
+                  <div class="col-7">
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="64"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 64%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center alert p-0">
+                  <div class="col-5"><h6>C++:</h6></div>
+                  <div class="col-7">
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center alert p-0">
+                  <div class="col-5"><h6>C#:</h6></div>
+                  <div class="col-7">
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center alert p-0">
+                  <div class="col-5"><h6>Python:</h6></div>
+                  <div class="col-7">
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center alert p-0">
+                  <div class="col-5"><h6>Rust:</h6></div>
+                  <div class="col-7">
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center alert p-0">
+                  <div class="col-5"><h6>PL/SQL:</h6></div>
+                  <div class="col-7">
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-3"
+                style="border-right: 2px dashed rgba(126, 121, 121, 0.459)"
+              >
+                <div class="fs-3">Database</div>
+                <div class="col text-center alert fs-5 p-2">MySQL</div>
+                <div class="col text-center alert fs-5 p-2">MS SQL Server</div>
+                <div class="col text-center alert fs-5 p-2">Oracle ORM</div>
+              </div>
+              <div
+                class="col-3"
+                style="border-right: 2px dashed rgba(126, 121, 121, 0.459)"
+              >
+                <div class="fs-3">Frameworks</div>
+                <div class="col text-center alert fs-5 p-0">.Net</div>
+                <div class="col text-center alert fs-5 p-0">TensorFlow</div>
+                <div class="col text-center alert fs-5 p-0">Hibernate</div>
+                <div class="col text-center alert fs-5 p-0">Git</div>
+                <div class="col text-center alert fs-5 p-0">Bootstrap</div>
+              </div>
+              <div class="col-3">
+                <div class="fs-3">Platforms</div>
+                <div class="col text-center alert fs-5 p-0">Google Cloud</div>
+                <div class="col text-center alert fs-5 p-0">AWS</div>
+                <div class="col text-center alert fs-5 p-0">Eclipse</div>
+                <div class="col text-center alert fs-5 p-0">VS IDE</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-3"
+            style="border-right: 2px solid rgba(126, 121, 121, 0.459)"
+          >
+            <h2 class="fs-1">Soft Skills</h2>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img src="./Feather/chevrons-up.svg" class="me-5" /> Leadership
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img src="./Feather/sliders.svg" class="me-5" /> Decision Making
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img src="./Feather/sun.svg" class="me-5" /> Problem Solver
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img src="./Feather/zap.svg" class="me-5" /> Critical Thinking
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img src="./Feather/message-circle.svg" class="me-5" />
+              Communication
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img src="./Feather/command.svg" class="me-5" /> Team Spirit
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img src="./Feather/codesandbox.svg" class="me-5" /> Adaptability
+            </div>
+          </div>
+          <div class="col-3">
+            <h2 class="fs-1">Hobbies & Interests</h2>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img
+                height="30px"
+                src="./Feather/ball-of-basketball.png"
+                class="me-5"
+              />
+              Basketball
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img
+                height="30px"
+                src="./Feather/volleyball-ball.png"
+                class="me-5"
+              />
+              Volleyball
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img
+                height="30px"
+                src="./Feather/rock-and-roll.png"
+                class="me-5"
+              />
+              Dance
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img height="30px" src="./Feather/open-book.png" class="me-5" />
+              Book Reading
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img height="30px" src="./Feather/trekking.png" class="me-5" />
+              Trekking
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img height="30px" src="./Feather/gaming.png" class="me-5" />
+              PC Gaming
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img height="30px" src="./Feather/military.png" class="me-5" />
+              Military
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img height="30px" src="./Feather/racing.png" class="me-5" />
+              Automobiles
+            </div>
+            <div class="col text-start ms-5 alert fs-5 p-0">
+              <img height="30px" src="./Feather/settings.png" class="me-5" />
+              Computers
+            </div>
+          </div>
+        </div>
+        <hr class="mx-2 border border-2 border-lg" />
+        <div
+          class="row text-center mx-4 justify-content-around bg-plusLighter"
+          id="projects"
+        >
+          <h1 class="heading big-font-2">Projects</h1>
+          <div class="col-1"></div>
+          <div class="col-10">
+            <div class="d-flex flex-wrap mb-3 align-items-center">
+              <div
+                class="card m-3"
+                style="max-width: 650px !important; height: 300px !important"
+              >
+                <h5 class="card-header fs-2">Personalit Prediction System</h5>
+                <div class="card-body">
+                  <h5 class="card-title">ML/NLP Python Project</h5>
+                  <h6 class="card-title">03/2023 to 09/2023</h6>
+                  <p class="card-text">
+                    Leading a team of two to create a Personality Prediction
+                    Model (PPM) integrated into a web-app. Will integrate a
+                    text-based PPM with a Facial Emotion Recognition Model
+                  </p>
+                  <a href="#" class="btn btn-secondary disabled"
+                    >... Under development!</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card m-3"
+                style="max-width: 650px !important; height: 300px !important"
+              >
+                <h5 class="card-header fs-2" id="leanbow">LeanBow's Customs</h5>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    J2EE Full Stack, HTML, CSS, JS, MySQL
+                  </h5>
+
+                  <h6 class="card-title">08/2021 to 10/2021</h6>
+                  <p class="card-text">
+                    Solo Project to develop a webapp for Car buying and
+                    customization. Created a webapp for buying basic car or
+                    customizing car with previews of the parts Used Java’s JSP
+                    framework along with Hibernate for managing DB connection,
+                    CSS and JS web app design, MySQL for DBM and Apache for
+                    Server.
+                  </p>
+                  <a href="#" class="btn btn-secondary disabled"
+                    >No code available!</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card m-3"
+                style="
+                  max-width: 650px !important;
+                  min-height: 300px !important;
+                "
+              >
+                <h5 class="card-header fs-2">Crime Data Analysis</h5>
+                <img
+                  src="./Feather/CDA.png"
+                  height="300px"
+                  width="200px"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Python Pandas,Matplotlib,Seaborn,WordCloud,Folium
+                  </h5>
+                  <h6 class="card-title">03/2023 to 04/2023</h6>
+
+                  <p class="card-text">
+                    Solo project to analyze Crime Data of Los Angeles, CA, USA
+                    between the year of 2020-2022. Implemented descriptive,
+                    statistical and visual analysis on the data to gain multiple
+                    insights. Used python libraries : Pandas, MatPlotLib,
+                    Seaborn, Word Cloud and folium.
+                  </p>
+                  <a
+                    href="https://drive.google.com/file/d/1JtkoHJ2KehlwMKqwwwYYT7KX79tkYg3y/view?usp=sharing"
+                    class="btn btn-primary"
+                    >Read Thesis</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card m-3 align-self-center"
+                style="
+                  max-width: 650px !important;
+                  min-height: 300px !important;
+                "
+              >
+                <h5 class="card-header fs-2">
+                  Vercetti Services (Spa & Salon System)
+                </h5>
+                <img
+                  src="./Feather/VSSAS.png"
+                  height="300px"
+                  width="200px"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">C# and ASP.NET</h5>
+                  <p class="card-text">
+                    Lead a team of two to develop a WebApp for Spa Management.
+                    The use case is based on multiple entities like customer,
+                    staff, and admin with 10+ interfaces. Used C# for backend
+                    processing, ASP.Net for structural interface, CSS for
+                    Designing web pages, MS SQL Server for storing and
+                    maintaining database and IIS as server;
+                  </p>
+                  <a
+                    href="https://github.com/prashant-singh-2001/SpaNSalon"
+                    class="btn btn-primary"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card m-3"
+                style="
+                  max-width: 650px !important;
+                  min-height: 300px !important;
+                "
+              >
+                <h5 class="card-header fs-2">Start Next</h5>
+                <img
+                  src="./Feather/SN.png"
+                  height="500px"
+                  width="400px"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    J2EE Full Stack, HTML, CSS, JS, Oracle
+                  </h5>
+                  <h6 class="card-title">10/2021 to 12/2021</h6>
+                  <p class="card-text">
+                    Lead a team of 4 to develop a full-fledged web site hosting
+                    social networks for startups to grow. b. Developed the web
+                    site for entities: startups, founders, employees, and
+                    investors. c. Used Java’s JSP framework along with JDBC for
+                    managing DB connection, CSS and JS web app design, Oracle
+                    for DBM and Apache for Server.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <hr class="mx-2 border border-2" />
+        <div class="row text-start mx-4" id="schooling">
+          <div class="col-1"></div>
+          <div class="col-4">
+            <h1 class="heading big-font-2">Academics</h1>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-dark text-light fs-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    Masters of Computer Application
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <h5>SOET, ITM University, Gwalior</h5>
+                    <h5 style="font: italic">08/2022 – 07/2024</h5>
+                    <h5 style="font: italic">Current SGPA : 9.15</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-dark text-light fs-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Bachelore of Computer Application
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <h5>Prestige Institute of Management, Gwalior</h5>
+                    <h5 style="font: italic">07/2019-07/2022</h5>
+                    <h5 style="font: italic">
+                      CGPA : 8.56 (Percentage: 81.34%)
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-dark text-light fs-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Higher Secondary (12th)
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <h5>Army Public School, Gwalior</h5>
+                    <h5 style="font: italic">04/2018 – 05/2019</h5>
+                    <h5 style="font: italic">
+                      CGPA : 7.76 (Percentage: 73.8%)
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-dark text-light fs-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    High School (10th)
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <h5>Army Public School, Gwalior</h5>
+                    <h5 style="font: italic">04/2016 – 05/2017</h5>
+                    <h5 style="font: italic">CGPA : 10 (Percentage: 95%)</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-5">
+            <h1 class="heading big-font-2">Trainings</h1>
+            <div class="accordion" id="accordionTExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-light text-dark fs-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTOne"
+                    aria-expanded="false"
+                    aria-controls="collapseTOne"
+                  >
+                    TCS Careers Edge - Young Professional
+                  </button>
+                </h2>
+                <div
+                  id="collapseTOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionTExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="fs-5">
+                      <li>
+                        Successfully completed Soft Skills training under TCS
+                      </li>
+                      <li>
+                        Gained skills like Communication Skills, Presentation
+                        Skills, and other Soft Skills
+                      </li>
+                      <li>TCS Certified</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-light text-dark fs-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTTwo"
+                  >
+                    AWS Academy Cloud Practitioner Training
+                  </button>
+                </h2>
+                <div
+                  id="collapseTTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionTExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="fs-5">
+                      <li>
+                        Successfully completed AWS Cloud Practitioner training
+                      </li>
+                      <li>
+                        Gained skills such as Cloud Computing, AWS Cloud
+                        Management
+                      </li>
+                      <li>
+                        Successfully gained
+                        <a
+                          href="https://www.credly.com/badges/86f4f10e-6d3f-46e4-aad9-baa358136d68/public_url"
+                          style="text-decoration: none"
+                          >AWS Academy Graduate- Cloud Foundation
+                          Certification</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-light text-dark fs-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTThree"
+                    aria-expanded="false"
+                    aria-controls="collapseTThree"
+                  >
+                    Wipro Talent Next J2EE Training
+                  </button>
+                </h2>
+                <div
+                  id="collapseTThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionTExample"
+                >
+                  <div class="accordion-body">
+                    <ul class="fs-5">
+                      <li>
+                        Learnt about J2EE and its component to develop Websites
+                        using JSP and JDBC
+                      </li>
+                      <li>
+                        Developed a personal project
+                        <a href="#leanbow" style="text-decoration: none"
+                          >LeanBow's Customs</a
+                        >
+                        using J2EE Stack
+                      </li>
+                      <li>Successfully gained Wipro Certificate</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <hr class="mx-2 border border-2" />
+        <div class="row mx-4 bg-plusLighter" id="certificate">
+          <h1 class="heading big-font-2 p-4 text-center">
+            <img height="50px" src="./Feather/certificate.png" class="me-2" />
+            Certificates, Badges and Courses
+          </h1>
+
+          <div class="col-2"></div>
+          <div class="col-8 m-4">
+            <div class="col text-start ms-5 alert fs-4 p-0">
+              <img
+                height="30px"
+                src="./Feather/google-analytics.png"
+                class="me-2"
+              />
+              Google Analytics Certification
+            </div>
+            <div class="col text-start ms-5 alert fs-4 p-0">
+              <img height="30px" src="./Feather/iteration.png" class="me-2" />
+              Celonis: Academic Process Mining Fundamentals Certification
+            </div>
+            <div class="col text-start ms-5 alert fs-4 p-0">
+              <img
+                height="30px"
+                src="./Feather/data-searching.png"
+                class="me-2"
+              />
+              Celonis: Write PQL Queries Certification
+            </div>
+            <div class="col text-start ms-5 alert fs-4 p-0">
+              <img height="30px" src="./Feather/code.svg" class="me-2" />
+              HackerRank Certified:
+              <div class="row mx-5 my-3">
+                <div class="col-12 p-3">
+                  <img
+                    height="30px"
+                    src="./Feather/sql-server.png"
+                    class="me-2"
+                  />SQL: Advanced
+                </div>
+                <div class="col-12 p-2">
+                  <img
+                    height="30px"
+                    src="./Feather/idea.png"
+                    class="me-2"
+                  />Problem Solving: Intermediate
+                </div>
+                <div class="col-12 p-2">
+                  <img
+                    height="30px"
+                    src="./Feather/java-logo.png"
+                    class="me-2"
+                  />Java: Basic
+                </div>
+                <div class="col-12 p-2">
+                  <img
+                    height="30px"
+                    src="./Feather/python.png"
+                    class="me-2"
+                  />Python Basic
+                </div>
+                <div class="col-12 p-2">
+                  <img
+                    height="30px"
+                    src="./Feather/c-sharp.png"
+                    class="me-2"
+                  />C#: Basic
+                </div>
+              </div>
+            </div>
+            <div class="col text-start ms-5 alert fs-4 p-0">
+              <img height="50px" src="./Feather/oracle.png" class="me-2" />
+              Oracle Java Explorer Badge
+            </div>
+            <div class="col text-start ms-5 alert fs-4 p-0">
+              <img height="30px" src="./Feather/ai.png" class="me-2" />
+              Elements of AI by University of Helsinki
+            </div>
+            <div class="col text-start ms-5 alert fs-4 p-0">
+              <img height="30px" src="./Feather/java.png" class="me-2" />
+              Infosys Springboard Java Developer Certification
+            </div>
+            <div class="col text-start ms-5 alert fs-4 p-0">
+              <img height="30px" src="./Feather/brain.png" class="me-2" />
+              freeCodeCamp Machine Learning with Python
+            </div>
+            <div class="col text-start ms-5 alert fs-4 p-0">
+              <img height="30px" src="./Feather/dashboard.png" class="me-2" />
+              Data Analysis with Python from Udemy
+            </div>
+            <div class="col text-start ms-5 alert fs-4 p-0">
+              <img height="30px" src="./Feather/hashtag.png" class="me-2" />
+              Learn C# Coding Intermediate: C# Classes, Methods and OOPs from
+              Udemy
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <hr class="mx-2 border border-2" />
+        <div class="row mx-4" id="other">
+          <div class="col-1"></div>
+          <div class="col-4">
+            <h1 class="heading big-font-2 p-4">Positions of Responsibility</h1>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong class="fs-4">Transportation Committee</strong>
+                <ul>
+                  <li>Head Student Coordinator</li>
+                  <li>Spandan (2021), PIMRG</li>
+                </ul>
+              </li>
+              <li class="list-group-item">
+                <strong class="fs-4">Stage Committee</strong>
+                <ul>
+                  <li>Head Student Coordinator</li>
+                  <li>Convocation 2022, ITM University</li>
+                </ul>
+              </li>
+              <li class="list-group-item">
+                <strong class="fs-4">CR of MCA</strong>
+                <ul>
+                  <li>MCA Batch 2022-2024</li>
+                  <li>SOET, ITM University</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-5">
+            <h1 class="heading big-font-2 p-4">Co-curricular Activities</h1>
+            <ul class="list-group fs-4">
+              <li class="list-group-item">
+                <strong class="fs-4">Coding Champ </strong>
+                <ul>
+                  <li>1st Runner Up</li>
+                  <li>Spandan 2021</li>
+                </ul>
+              </li>
+              <li class="list-group-item">
+                <strong class="fs-4">Talent Hunt & IT Quiz</strong>
+                <ul>
+                  <li>Finalist among 200+ individual contestant!</li>
+                  <li>Spandan 2021, PIMG</li>
+                </ul>
+              </li>
+              <li class="list-group-item">
+                <strong class="fs-4">Treasure Hunt</strong>
+                <ul>
+                  <li>Finalist among 20+ groups!</li>
+                  <li>UniFest, ITM University</li>
+                </ul>
+              </li>
+              <li class="list-group-item">
+                <strong class="fs-4"
+                  >International Conference on Communication, Networks and
+                  Computing</strong
+                >
+                <ul>
+                  <li>8-10, December, 2022, ITM University</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
