@@ -10,101 +10,8 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-
-    <style>
-      * {
-        margin: 0;
-        scroll-behavior: auto;
-      }
-      @keyframes slideInLeft {
-        0% {
-          transform: translateX(-100%);
-        }
-        100% {
-          transform: translateX(0);
-        }
-      }
-      @keyframes slideInRight {
-        0% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(0);
-        }
-      }
-      @keyframes slideInUp {
-        0% {
-          transform: translateY(100%);
-        }
-        100% {
-          transform: translateY(0);
-        }
-      }
-      @keyframes slideInDown {
-        0% {
-          transform: translateY(-100%);
-        }
-        100% {
-          transform: translateY(0);
-        }
-      }
-      .no-border {
-        border: 0 !important;
-      }
-
-      .no-bg {
-        background-color: transparent !important;
-      }
-
-      .bg-plusLight {
-        background-color: rgba(207, 238, 240, 0.37) !important;
-      }
-
-      .bg-plusLighter {
-        background-color: rgba(179, 196, 197, 0.39) !important;
-      }
-
-      .big-font {
-        font-size: 2.5cm !important;
-        font: bolder !important;
-        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-          "Lucida Sans", Arial, sans-serif;
-      }
-      .big-font-2 {
-        font-size: 1.2cm !important;
-        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-          "Lucida Sans", Arial, sans-serif;
-      }
-
-      .active {
-        font-style: oblique !important;
-      }
-      .ico-img {
-        transition: ease-in-out 0.21s;
-      }
-      .ico-img:hover {
-        transform: scale(1.4);
-      }
-      .nav-link {
-        transition: step-start(2);
-      }
-      .nav-link:hover {
-        transform: scaleX(1.1);
-      }
-
-      .slideIn {
-        animation: 1.6s ease-out 0s 1 slideInLeft;
-      }
-      .slideOut {
-        animation: 1.6s ease-out 0s 1 slideInRight;
-      }
-      .slideUp {
-        animation: 1.6s ease-out 0s 1 slideInUp;
-      }
-      .slideDown {
-        animation: 1.6s ease-out 0s 1 slideInDown;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
   </head>
 
   <body
@@ -116,7 +23,9 @@
     "
   >
     <div class="container-fluid">
-      <nav class="navbar bg-light navbar-expand-lg sticky-top rounded-5 mt-2">
+      <nav
+        class="navbar bg-light navbar-expand-lg sticky-top rounded-5 border border-3"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -142,30 +51,34 @@
           </div>
         </div>
       </nav>
-      <div class="card rounded-4 border-0" style="margin-top: 1.4cm !important">
-        <div class="row align-items-center bg-plusLighter mx-4 mt-4" id="me">
+      <div
+        class="card rounded-4 border-dark border-2 mb-3"
+        style="margin-top: 0.4cm !important"
+      >
+        <div
+          class="row align-items-center bg-plusLighter rounded-3 mx-4 mt-3"
+          id="me"
+        >
           <div
             class="col-8"
             style="border-right: 2px solid rgba(126, 121, 121, 0.459)"
           >
             <div class="row text-center">
               <div class="col align-items-center">
-                <p class="no-bg text-capitalize big-font slideIn">
-                  Prashant Singh
-                </p>
-                <p class="no-bg text-capitalize fs-3 text-danger slideIn">
+                <p class="no-bg text-capitalize big-font hid">Prashant Singh</p>
+                <p class="no-bg text-capitalize fs-3 text-danger hid">
                   Software Developer | Fresher
                 </p>
               </div>
             </div>
             <div class="row justify-content-center">
               <div class="col-1"></div>
-              <div class="col-10 align-self-center slideIn">
+              <div class="col-10 align-self-center">
                 <img
                   src="Pic.png"
                   height="75%"
                   width="75%"
-                  class="mx-auto d-block img-fluid rounded-3 slideIn"
+                  class="mx-auto d-block img-fluid rounded-3 hid"
                   alt="..."
                 />
               </div>
@@ -178,9 +91,9 @@
                   class="no-bg list-group no-border text-decoration-none justify-content-even"
                 >
                   <li
-                    class="no-bg row fs-5 list-group-item no-border align-self-center justify-content-even slideIn"
+                    class="no-bg row fs-5 list-group-item no-border align-self-center justify-content-even"
                   >
-                    <strong class="fs-4">Socials : </strong>
+                    <strong class="fs-4 hid">Socials : </strong>
                     <a
                       class="no-bg text-decoration-none col"
                       href="https://www.linkedin.com/in/prashant-singh-531b57198/"
@@ -188,7 +101,7 @@
                         alt="Linkedin"
                         src="./Feather/linkedin.svg"
                         height="30px"
-                        class="ico-img"
+                        class="ico-img hid"
                     /></a>
                     <a
                       class="no-bg text-decoration-none col"
@@ -197,7 +110,7 @@
                         height="30px"
                         src="./Feather/github.svg"
                         alt="Github"
-                        class="ico-img"
+                        class="ico-img hid"
                     /></a>
                     <a
                       class="no-bg text-decoration-none col"
@@ -206,7 +119,7 @@
                         height="30px"
                         src="./Feather/leetcode.svg"
                         alt="LeetCode"
-                        class="ico-img"
+                        class="ico-img hid"
                     /></a>
                     <a
                       class="no-bg text-decoration-none col"
@@ -215,7 +128,7 @@
                         height="30px"
                         src="./Feather/code.svg"
                         alt="HackerRank"
-                        class="ico-img"
+                        class="ico-img hid"
                     /></a>
                     <a
                       class="no-bg text-decoration-none col"
@@ -224,7 +137,7 @@
                         height="30px"
                         src="./Feather/tool.svg"
                         alt="Google Dev"
-                        class="ico-img"
+                        class="ico-img hid"
                     /></a>
                   </li>
                 </ul>
@@ -233,10 +146,10 @@
             </div>
           </div>
           <div class="col-4">
-            <div class="card mx-2 no-bg slideOut border border-0">
-              <div class="card-header fs-3">Hey there!</div>
+            <div class="card mx-2 no-bg border border-0 hid">
+              <div class="card-header hid fs-3">Hey there!</div>
               <div class="card-header">
-                <blockquote class="blockquote mb-0">
+                <blockquote class="blockquote mb-0 hid">
                   <strong
                     >I am an enthusiastic young man who is deeply passionate
                     about the IT field.</strong
@@ -251,13 +164,15 @@
               </div>
             </div>
             <div
-              class="no-bg row align-items-end text-end slideOut"
+              class="no-bg row align-items-end text-end"
               style="margin-top: 1rem"
             >
               <ul
                 class="no-bg list-group no-border text-decoration-none justify-content-around"
               >
-                <li class="no-bg fs-5 list-group-item no-border align-self-end">
+                <li
+                  class="no-bg fs-5 list-group-item no-border align-self-end hid"
+                >
                   <img src="./Feather/mail.svg" /> Mail :
                   <a
                     class="no-bg text-decoration-none"
@@ -266,11 +181,15 @@
                     Prashant Singh
                   </a>
                 </li>
-                <li class="no-bg fs-5 list-group-item no-border align-self-end">
+                <li
+                  class="no-bg fs-5 list-group-item no-border align-self-end hid"
+                >
                   <img src="./Feather/phone.svg" /> Contact number :
                   +91-9131732003
                 </li>
-                <li class="no-bg fs-5 list-group-item no-border align-self-end">
+                <li
+                  class="no-bg fs-5 list-group-item no-border align-self-end hid"
+                >
                   <img src="./Feather/map-pin.svg" /> Bhagat Singh Nagar, Bhind
                   Road, Gwalior, <br />
                   Madhya Pradesh- 474005
@@ -281,19 +200,19 @@
         </div>
         <hr class="mx-2 border border-2 border-lg" />
         <div class="row text-center mx-4" id="skills">
-          <h1 class="heading big-font-2 mb-5">Proefficiencies</h1>
+          <h1 class="heading big-font-2 mb-5 hid">Proefficiencies</h1>
           <div
             class="col-6"
             style="border-right: 2px solid rgba(126, 121, 121, 0.459)"
           >
-            <h2 class="fs-1">Techincal Skills</h2>
+            <h2 class="fs-1 hid">Techincal Skills</h2>
             <div class="row">
               <div
                 class="col-3"
                 style="border-right: 2px dashed rgba(126, 121, 121, 0.459)"
               >
-                <div class="fs-3">Language</div>
-                <div class="row align-items-center alert p-0">
+                <div class="fs-3 hid">Language</div>
+                <div class="row align-items-center alert p-0 hid">
                   <div class="col-5"><h6>Java:</h6></div>
                   <div class="col-7">
                     <div
@@ -308,7 +227,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row align-items-center alert p-0">
+                <div class="row align-items-center alert p-0 hid">
                   <div class="col-5"><h6>C:</h6></div>
                   <div class="col-7">
                     <div
@@ -323,7 +242,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row align-items-center alert p-0">
+                <div class="row align-items-center alert p-0 hid">
                   <div class="col-5"><h6>C++:</h6></div>
                   <div class="col-7">
                     <div
@@ -338,7 +257,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row align-items-center alert p-0">
+                <div class="row align-items-center alert p-0 hid">
                   <div class="col-5"><h6>C#:</h6></div>
                   <div class="col-7">
                     <div
@@ -353,7 +272,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row align-items-center alert p-0">
+                <div class="row align-items-center alert p-0 hid">
                   <div class="col-5"><h6>Python:</h6></div>
                   <div class="col-7">
                     <div
@@ -368,7 +287,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row align-items-center alert p-0">
+                <div class="row align-items-center alert p-0 hid">
                   <div class="col-5"><h6>Rust:</h6></div>
                   <div class="col-7">
                     <div
@@ -383,7 +302,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row align-items-center alert p-0">
+                <div class="row align-items-center alert p-0 hid">
                   <div class="col-5"><h6>PL/SQL:</h6></div>
                   <div class="col-7">
                     <div
@@ -403,28 +322,32 @@
                 class="col-3"
                 style="border-right: 2px dashed rgba(126, 121, 121, 0.459)"
               >
-                <div class="fs-3">Database</div>
-                <div class="col text-center alert fs-5 p-2">MySQL</div>
-                <div class="col text-center alert fs-5 p-2">MS SQL Server</div>
-                <div class="col text-center alert fs-5 p-2">Oracle ORM</div>
+                <div class="fs-3 hid">Database</div>
+                <div class="col text-center alert fs-5 p-2 hid">MySQL</div>
+                <div class="col text-center alert fs-5 p-2 hid">
+                  MS SQL Server
+                </div>
+                <div class="col text-center alert fs-5 p-2 hid">Oracle ORM</div>
               </div>
               <div
                 class="col-3"
                 style="border-right: 2px dashed rgba(126, 121, 121, 0.459)"
               >
-                <div class="fs-3">Frameworks</div>
-                <div class="col text-center alert fs-5 p-0">.Net</div>
-                <div class="col text-center alert fs-5 p-0">TensorFlow</div>
-                <div class="col text-center alert fs-5 p-0">Hibernate</div>
-                <div class="col text-center alert fs-5 p-0">Git</div>
-                <div class="col text-center alert fs-5 p-0">Bootstrap</div>
+                <div class="fs-3 hid">Frameworks</div>
+                <div class="col text-center alert fs-5 hid p-0">.Net</div>
+                <div class="col text-center alert fs-5 hid p-0">TensorFlow</div>
+                <div class="col text-center alert fs-5 hid p-0">Hibernate</div>
+                <div class="col text-center alert fs-5 hid p-0">Git</div>
+                <div class="col text-center alert fs-5 hid p-0">Bootstrap</div>
               </div>
               <div class="col-3">
-                <div class="fs-3">Platforms</div>
-                <div class="col text-center alert fs-5 p-0">Google Cloud</div>
-                <div class="col text-center alert fs-5 p-0">AWS</div>
-                <div class="col text-center alert fs-5 p-0">Eclipse</div>
-                <div class="col text-center alert fs-5 p-0">VS IDE</div>
+                <div class="fs-3 hid">Platforms</div>
+                <div class="col text-center alert fs-5 hid p-0">
+                  Google Cloud
+                </div>
+                <div class="col text-center alert fs-5 hid p-0">AWS</div>
+                <div class="col text-center alert fs-5 hid p-0">Eclipse</div>
+                <div class="col text-center alert fs-5 hid p-0">VS IDE</div>
               </div>
             </div>
           </div>
@@ -432,33 +355,33 @@
             class="col-3"
             style="border-right: 2px solid rgba(126, 121, 121, 0.459)"
           >
-            <h2 class="fs-1">Soft Skills</h2>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <h2 class="fs-1 hid">Soft Skills</h2>
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img src="./Feather/chevrons-up.svg" class="me-5" /> Leadership
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img src="./Feather/sliders.svg" class="me-5" /> Decision Making
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img src="./Feather/sun.svg" class="me-5" /> Problem Solver
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img src="./Feather/zap.svg" class="me-5" /> Critical Thinking
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img src="./Feather/message-circle.svg" class="me-5" />
               Communication
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img src="./Feather/command.svg" class="me-5" /> Team Spirit
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img src="./Feather/codesandbox.svg" class="me-5" /> Adaptability
             </div>
           </div>
           <div class="col-3">
-            <h2 class="fs-1">Hobbies & Interests</h2>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <h2 class="fs-1 hid">Hobbies & Interests</h2>
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img
                 height="30px"
                 src="./Feather/ball-of-basketball.png"
@@ -466,7 +389,7 @@
               />
               Basketball
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img
                 height="30px"
                 src="./Feather/volleyball-ball.png"
@@ -474,7 +397,7 @@
               />
               Volleyball
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img
                 height="30px"
                 src="./Feather/rock-and-roll.png"
@@ -482,27 +405,27 @@
               />
               Dance
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img height="30px" src="./Feather/open-book.png" class="me-5" />
               Book Reading
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img height="30px" src="./Feather/trekking.png" class="me-5" />
               Trekking
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img height="30px" src="./Feather/gaming.png" class="me-5" />
               PC Gaming
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img height="30px" src="./Feather/military.png" class="me-5" />
               Military
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img height="30px" src="./Feather/racing.png" class="me-5" />
               Automobiles
             </div>
-            <div class="col text-start ms-5 alert fs-5 p-0">
+            <div class="col text-start ms-5 alert fs-5 p-0 hid">
               <img height="30px" src="./Feather/settings.png" class="me-5" />
               Computers
             </div>
@@ -521,8 +444,10 @@
                 class="card m-3"
                 style="max-width: 650px !important; height: 300px !important"
               >
-                <h5 class="card-header fs-2">Personalit Prediction System</h5>
-                <div class="card-body">
+                <h5 class="card-header hid fs-2">
+                  Personalit Prediction System
+                </h5>
+                <div class="card-body hid">
                   <h5 class="card-title">ML/NLP Python Project</h5>
                   <h6 class="card-title">03/2023 to 09/2023</h6>
                   <p class="card-text">
@@ -539,8 +464,10 @@
                 class="card m-3"
                 style="max-width: 650px !important; height: 300px !important"
               >
-                <h5 class="card-header fs-2" id="leanbow">LeanBow's Customs</h5>
-                <div class="card-body">
+                <h5 class="card-header hid fs-2" id="leanbow">
+                  LeanBow's Customs
+                </h5>
+                <div class="card-body hid">
                   <h5 class="card-title">
                     J2EE Full Stack, HTML, CSS, JS, MySQL
                   </h5>
@@ -554,9 +481,6 @@
                     CSS and JS web app design, MySQL for DBM and Apache for
                     Server.
                   </p>
-                  <a href="#" class="btn btn-secondary disabled"
-                    >No code available!</a
-                  >
                 </div>
               </div>
               <div
@@ -566,15 +490,15 @@
                   min-height: 300px !important;
                 "
               >
-                <h5 class="card-header fs-2">Crime Data Analysis</h5>
+                <h5 class="card-header hid fs-2">Crime Data Analysis</h5>
                 <img
                   src="./Feather/CDA.png"
                   height="300px"
                   width="200px"
-                  class="card-img-top"
+                  class="card-img-top hid"
                   alt="..."
                 />
-                <div class="card-body">
+                <div class="card-body hid">
                   <h5 class="card-title">
                     Python Pandas,Matplotlib,Seaborn,WordCloud,Folium
                   </h5>
@@ -601,17 +525,17 @@
                   min-height: 300px !important;
                 "
               >
-                <h5 class="card-header fs-2">
+                <h5 class="card-header hid fs-2">
                   Vercetti Services (Spa & Salon System)
                 </h5>
                 <img
                   src="./Feather/VSSAS.png"
                   height="300px"
                   width="200px"
-                  class="card-img-top"
+                  class="card-img-top hid"
                   alt="..."
                 />
-                <div class="card-body">
+                <div class="card-body hid">
                   <h5 class="card-title">C# and ASP.NET</h5>
                   <p class="card-text">
                     Lead a team of two to develop a WebApp for Spa Management.
@@ -635,15 +559,15 @@
                   min-height: 300px !important;
                 "
               >
-                <h5 class="card-header fs-2">Start Next</h5>
+                <h5 class="card-header hid fs-2">Start Next</h5>
                 <img
                   src="./Feather/SN.png"
                   height="500px"
                   width="400px"
-                  class="card-img-top"
+                  class="card-img-top hid"
                   alt="..."
                 />
-                <div class="card-body">
+                <div class="card-body hid">
                   <h5 class="card-title">
                     J2EE Full Stack, HTML, CSS, JS, Oracle
                   </h5>
@@ -666,12 +590,12 @@
         <div class="row text-start mx-4" id="schooling">
           <div class="col-1"></div>
           <div class="col-4">
-            <h1 class="heading big-font-2">Academics</h1>
-            <div class="accordion" id="accordionExample">
+            <h1 class="heading big-font-2 hid">Academics</h1>
+            <div class="accordion hid" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button bg-dark text-light fs-3"
+                    class="accordion-button bg-dark-subtle text-dark fs-3"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOne"
@@ -696,7 +620,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button bg-dark text-light fs-3"
+                    class="accordion-button bg-dark-subtle text-dark fs-3"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo"
@@ -723,7 +647,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button bg-dark text-light fs-3"
+                    class="accordion-button bg-dark-subtle text-dark fs-3"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseThree"
@@ -750,7 +674,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button bg-dark text-light fs-3"
+                    class="accordion-button bg-dark-subtle text-dark fs-3"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseFour"
@@ -776,8 +700,8 @@
           </div>
           <div class="col-1"></div>
           <div class="col-5">
-            <h1 class="heading big-font-2">Trainings</h1>
-            <div class="accordion" id="accordionTExample">
+            <h1 class="heading big-font-2 hid">Trainings</h1>
+            <div class="accordion hid" id="accordionTExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
@@ -798,14 +722,14 @@
                 >
                   <div class="accordion-body">
                     <ul class="fs-5">
-                      <li>
+                      <li class="hid">
                         Successfully completed Soft Skills training under TCS
                       </li>
-                      <li>
+                      <li class="hid">
                         Gained skills like Communication Skills, Presentation
                         Skills, and other Soft Skills
                       </li>
-                      <li>TCS Certified</li>
+                      <li class="hid">TCS Certified</li>
                     </ul>
                   </div>
                 </div>
@@ -830,14 +754,14 @@
                 >
                   <div class="accordion-body">
                     <ul class="fs-5">
-                      <li>
+                      <li class="hid">
                         Successfully completed AWS Cloud Practitioner training
                       </li>
-                      <li>
+                      <li class="hid">
                         Gained skills such as Cloud Computing, AWS Cloud
                         Management
                       </li>
-                      <li>
+                      <li class="hid">
                         Successfully gained
                         <a
                           href="https://www.credly.com/badges/86f4f10e-6d3f-46e4-aad9-baa358136d68/public_url"
@@ -870,18 +794,18 @@
                 >
                   <div class="accordion-body">
                     <ul class="fs-5">
-                      <li>
+                      <li class="hid">
                         Learnt about J2EE and its component to develop Websites
                         using JSP and JDBC
                       </li>
-                      <li>
+                      <li class="hid">
                         Developed a personal project
                         <a href="#leanbow" style="text-decoration: none"
                           >LeanBow's Customs</a
                         >
                         using J2EE Stack
                       </li>
-                      <li>Successfully gained Wipro Certificate</li>
+                      <li class="hid">Successfully gained Wipro Certificate</li>
                     </ul>
                   </div>
                 </div>
@@ -892,14 +816,14 @@
         </div>
         <hr class="mx-2 border border-2" />
         <div class="row mx-4 bg-plusLighter" id="certificate">
-          <h1 class="heading big-font-2 p-4 text-center">
+          <h1 class="heading big-font-2 p-4 text-center hid">
             <img height="50px" src="./Feather/certificate.png" class="me-2" />
             Certificates, Badges and Courses
           </h1>
 
           <div class="col-2"></div>
           <div class="col-8 m-4">
-            <div class="col text-start ms-5 alert fs-4 p-0">
+            <div class="col text-start ms-5 alert fs-4 p-0 hid">
               <img
                 height="30px"
                 src="./Feather/google-analytics.png"
@@ -907,11 +831,11 @@
               />
               Google Analytics Certification
             </div>
-            <div class="col text-start ms-5 alert fs-4 p-0">
+            <div class="col text-start ms-5 alert fs-4 p-0 hid">
               <img height="30px" src="./Feather/iteration.png" class="me-2" />
               Celonis: Academic Process Mining Fundamentals Certification
             </div>
-            <div class="col text-start ms-5 alert fs-4 p-0">
+            <div class="col text-start ms-5 alert fs-4 p-0 hid">
               <img
                 height="30px"
                 src="./Feather/data-searching.png"
@@ -919,39 +843,39 @@
               />
               Celonis: Write PQL Queries Certification
             </div>
-            <div class="col text-start ms-5 alert fs-4 p-0">
+            <div class="col text-start ms-5 alert fs-4 p-0 hid">
               <img height="30px" src="./Feather/code.svg" class="me-2" />
               HackerRank Certified:
               <div class="row mx-5 my-3">
-                <div class="col-12 p-3">
+                <div class="col-12 p-2 hid">
                   <img
                     height="30px"
                     src="./Feather/sql-server.png"
                     class="me-2"
                   />SQL: Advanced
                 </div>
-                <div class="col-12 p-2">
+                <div class="col-12 p-2 hid">
                   <img
                     height="30px"
                     src="./Feather/idea.png"
                     class="me-2"
                   />Problem Solving: Intermediate
                 </div>
-                <div class="col-12 p-2">
+                <div class="col-12 p-2 hid">
                   <img
                     height="30px"
                     src="./Feather/java-logo.png"
                     class="me-2"
                   />Java: Basic
                 </div>
-                <div class="col-12 p-2">
+                <div class="col-12 p-2 hid">
                   <img
                     height="30px"
                     src="./Feather/python.png"
                     class="me-2"
                   />Python Basic
                 </div>
-                <div class="col-12 p-2">
+                <div class="col-12 p-2 hid">
                   <img
                     height="30px"
                     src="./Feather/c-sharp.png"
@@ -960,27 +884,27 @@
                 </div>
               </div>
             </div>
-            <div class="col text-start ms-5 alert fs-4 p-0">
+            <div class="col text-start ms-5 alert fs-4 p-0 hid">
               <img height="50px" src="./Feather/oracle.png" class="me-2" />
               Oracle Java Explorer Badge
             </div>
-            <div class="col text-start ms-5 alert fs-4 p-0">
+            <div class="col text-start ms-5 alert fs-4 p-0 hid">
               <img height="30px" src="./Feather/ai.png" class="me-2" />
               Elements of AI by University of Helsinki
             </div>
-            <div class="col text-start ms-5 alert fs-4 p-0">
+            <div class="col text-start ms-5 alert fs-4 p-0 hid">
               <img height="30px" src="./Feather/java.png" class="me-2" />
               Infosys Springboard Java Developer Certification
             </div>
-            <div class="col text-start ms-5 alert fs-4 p-0">
+            <div class="col text-start ms-5 alert fs-4 p-0 hid">
               <img height="30px" src="./Feather/brain.png" class="me-2" />
               freeCodeCamp Machine Learning with Python
             </div>
-            <div class="col text-start ms-5 alert fs-4 p-0">
+            <div class="col text-start ms-5 alert fs-4 p-0 hid">
               <img height="30px" src="./Feather/dashboard.png" class="me-2" />
               Data Analysis with Python from Udemy
             </div>
-            <div class="col text-start ms-5 alert fs-4 p-0">
+            <div class="col text-start ms-5 alert fs-4 p-0 hid">
               <img height="30px" src="./Feather/hashtag.png" class="me-2" />
               Learn C# Coding Intermediate: C# Classes, Methods and OOPs from
               Udemy
@@ -992,63 +916,67 @@
         <div class="row mx-4" id="other">
           <div class="col-1"></div>
           <div class="col-4">
-            <h1 class="heading big-font-2 p-4">Positions of Responsibility</h1>
-            <ul class="list-group">
+            <h1 class="heading big-font-2 p-4 hid">
+              Positions of Responsibility
+            </h1>
+            <ul class="list-group hid">
               <li class="list-group-item">
-                <strong class="fs-4">Transportation Committee</strong>
+                <strong class="fs-4 hid">Transportation Committee</strong>
                 <ul>
-                  <li>Head Student Coordinator</li>
-                  <li>Spandan (2021), PIMRG</li>
+                  <li class="hid">Head Student Coordinator</li>
+                  <li class="hid">Spandan (2021), PIMRG</li>
                 </ul>
               </li>
               <li class="list-group-item">
-                <strong class="fs-4">Stage Committee</strong>
+                <strong class="fs-4 hid">Stage Committee</strong>
                 <ul>
-                  <li>Head Student Coordinator</li>
-                  <li>Convocation 2022, ITM University</li>
+                  <li class="hid">Head Student Coordinator</li>
+                  <li class="hid">Convocation 2022, ITM University</li>
                 </ul>
               </li>
               <li class="list-group-item">
-                <strong class="fs-4">CR of MCA</strong>
+                <strong class="fs-4 hid">CR of MCA</strong>
                 <ul>
-                  <li>MCA Batch 2022-2024</li>
-                  <li>SOET, ITM University</li>
+                  <li class="hid">MCA Batch 2022-2024</li>
+                  <li class="hid">SOET, ITM University</li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="col-1"></div>
           <div class="col-5">
-            <h1 class="heading big-font-2 p-4">Co-curricular Activities</h1>
-            <ul class="list-group fs-4">
+            <h1 class="heading big-font-2 p-4 hid">Co-curricular Activities</h1>
+            <ul class="list-group fs-4 hid">
               <li class="list-group-item">
-                <strong class="fs-4">Coding Champ </strong>
+                <strong class="fs-4 hid">Coding Champ </strong>
                 <ul>
-                  <li>1st Runner Up</li>
-                  <li>Spandan 2021</li>
+                  <li class="hid">1st Runner Up</li>
+                  <li class="hid">Spandan 2021</li>
                 </ul>
               </li>
               <li class="list-group-item">
-                <strong class="fs-4">Talent Hunt & IT Quiz</strong>
+                <strong class="fs-4 hid">Talent Hunt & IT Quiz</strong>
                 <ul>
-                  <li>Finalist among 200+ individual contestant!</li>
-                  <li>Spandan 2021, PIMG</li>
+                  <li class="hid">
+                    Finalist among 200+ individual contestant!
+                  </li>
+                  <li class="hid">Spandan 2021, PIMG</li>
                 </ul>
               </li>
               <li class="list-group-item">
-                <strong class="fs-4">Treasure Hunt</strong>
+                <strong class="fs-4 hid">Treasure Hunt</strong>
                 <ul>
-                  <li>Finalist among 20+ groups!</li>
-                  <li>UniFest, ITM University</li>
+                  <li class="hid">Finalist among 20+ groups!</li>
+                  <li class="hid">UniFest, ITM University</li>
                 </ul>
               </li>
               <li class="list-group-item">
-                <strong class="fs-4"
+                <strong class="fs-4 hid"
                   >International Conference on Communication, Networks and
                   Computing</strong
                 >
                 <ul>
-                  <li>8-10, December, 2022, ITM University</li>
+                  <li class="hid">8-10, December, 2022, ITM University</li>
                 </ul>
               </li>
             </ul>
