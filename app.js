@@ -10,3 +10,16 @@ const observer = new IntersectionObserver((e) => {
 
 const hiddenElements = document.querySelectorAll(".hid");
 hiddenElements.forEach((element) => observer.observe(element));
+
+var typed = new Typed("#element", {
+  strings: [
+    "WEB DEVELOPER",
+    "MERN STACK",
+    "JAVA FULL STACK",
+    "DATA ANALYST",
+    "LEETCODE #10K",
+    "HACKERRANK 5⭐",
+  ],
+  typeSpeed: 25,
+  loop: true,
+});

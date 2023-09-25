@@ -50,11 +50,21 @@
 .hid {
   opacity: 0.5;
   filter: blur(2px);
-  transform: matrix(0.1, 0, 0, 0.1, 250, 50);
+  translate: 0px -60px;
   transition: all 1s;
 }
 .show-item {
   opacity: 1;
+  translate: 0px 0px;
   filter: blur(0px);
-  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.text-gradient {
+  font-size: 50px !important;
+  background: -webkit-linear-gradient(rgb(145, 145, 145), #ff0019);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  .idk {
+    font-weight: bolder;
+  }
 }
