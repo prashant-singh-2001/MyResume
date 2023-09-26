@@ -24,7 +24,7 @@
   >
     <div class="container-fluid">
       <nav
-        class="navbar bg-light navbar-expand-lg sticky-top rounded-5 border border-3 mt-2"
+        class="navbar bg-light navbar-expand-lg sticky-top rounded-5 border border-3 mt-1"
       >
         <div class="container-fluid">
           <button
@@ -46,7 +46,7 @@
             <a
               download="true"
               href="PSR_X.pdf"
-              class="fs-4 p-0 mx-2 btn btn-outline-danger rounded-4 px-3"
+              class="fs-4 p-0 mx-2 btn btn-outline-secondary btn-light rounded-4 px-3"
               >Resume<img
                 class="ms-2 img-fluid"
                 src="./Feather/download-cloud.svg"
@@ -64,11 +64,14 @@
       </nav>
       <div
         class="card rounded-4 border-dark border-2 mb-3"
-        style="margin-top: 0.4cm !important"
+        style="
+          margin-top: 0.6cm !important;
+          scroll-snap-type: y mandatory !important;
+        "
+        id="me"
       >
         <div
-          class="row align-items-center bg-plusLighter rounded-3 mx-4 mt-3"
-          id="me"
+          class="row align-items-center bg-plusLighter rounded-3 mx-4 mt-4 scroll-behave"
         >
           <div
             class="col-8"
@@ -200,7 +203,10 @@
           </div>
         </div>
         <hr class="mx-2 border border-2 border-lg" id="skills" />
-        <div class="row text-center mx-4" style="margin: 7% 0% 0% 0%">
+        <div
+          class="row text-center mx-4 scroll-behave"
+          style="margin: 7% 0% 0% 0%"
+        >
           <h1 class="heading big-font-2 mb-5 hid">Proefficiencies</h1>
           <div
             class="col-6"
@@ -434,7 +440,7 @@
         </div>
         <hr id="projects" class="mx-2 border border-2 border-lg" />
         <div
-          class="row text-center mx-4 justify-content-around bg-plusLighter"
+          class="row text-center mx-4 justify-content-around bg-plusLighter scroll-behave"
           style="margin: 7% 0% 0% 0%"
         >
           <h1 class="heading big-font-2">Projects</h1>
@@ -588,7 +594,10 @@
           <div class="col-1"></div>
         </div>
         <hr class="mx-2 border border-2" id="schooling" />
-        <div class="row text-start mx-4" style="margin: 7% 0% 0% 0%">
+        <div
+          class="row text-start mx-4 scroll-behave"
+          style="margin: 7% 0% 0% 0%"
+        >
           <div class="col-1"></div>
           <div class="col-4">
             <h1 class="heading big-font-2 hid">Academics</h1>
@@ -816,7 +825,10 @@
           <div class="col-1"></div>
         </div>
         <hr class="mx-2 border border-2" id="certificate" />
-        <div class="row mx-4 bg-plusLighter" style="margin: 7% 0% 0% 0%">
+        <div
+          class="row mx-4 bg-plusLighter scroll-behave"
+          style="margin: 7% 0% 0% 0%"
+        >
           <h1 class="heading big-font-2 p-4 text-center hid">
             <img height="50px" src="./Feather/certificate.png" class="me-2" />
             Certificates, Badges and Courses
@@ -914,7 +926,7 @@
           <div class="col-2"></div>
         </div>
         <hr class="mx-2 border border-2" id="other" />
-        <div class="row mx-4 py-5" style="margin: 4% 0% 0% 0%">
+        <div class="row mx-4 py-5 scroll-behave" style="margin: 2% 0% 0% 0%">
           <div class="col-1"></div>
           <div class="col-4">
             <h1 class="heading big-font-2 p-4 hid">

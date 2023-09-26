@@ -20,6 +20,6 @@ var typed = new Typed("#element", {
     "LEETCODE #10K",
     "HACKERRANK 5⭐",
   ],
-  typeSpeed: 25,
+  typeSpeed: 150,
   loop: true,
 });
